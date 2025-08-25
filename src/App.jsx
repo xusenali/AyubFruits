@@ -6,6 +6,7 @@ import { BiMenu } from "react-icons/bi";
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 import { IoIosSunny } from "react-icons/io";
 import { BsArrowUpRight, BsBoxFill } from "react-icons/bs";
+import name1 from "./src/images/sectionlogo.png"
 
 const images = [
   { img: "/src/images/img/arr1.png", title: "Жёлтый виноград" },
@@ -99,7 +100,7 @@ function App() {
         <div className="w-full h-full lg:w-[55%] p-5 xl:p-[45px] rounded-3xl flex flex-col gap-2 xl:gap-5 items-center justify-center bg-[linear-gradient(120deg,#E4D7CF,#AA807C)]">
           <img
             className="object-contain h-10 w-10 md:w-15 md:h-15"
-            src="./src/images/sectionlogo.png"
+            src={name1}
             alt=""
           />
           <h1 className="text-white text-xl md:text-4xl xl:text-5xl">
