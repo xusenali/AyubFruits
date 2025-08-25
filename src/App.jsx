@@ -9,20 +9,20 @@ import { BsArrowUpRight, BsBoxFill } from "react-icons/bs";
 
 
 const images = [
-  { img: "/src/public/img/arr1.png", title: "Жёлтый виноград" },
-  { img: "/src/public/img/arr2.png", title: "Грецкий орех" },
-  { img: "/src/public/img/arr3.png", title: "Арахис" },
-  { img: "/src/public/img/arr4.png", title: "Фасоль" },
-  { img: "/src/public/img/arr5.png", title: "Красная фасоль" },
-  { img: "/src/public/img/arr6.png", title: "Маш" },
-  { img: "/src/public/img/arr7.png", title: "Сушёная слива" },
-  { img: "/src/public/img/arr8.png", title: "Фасоль" },
-  { img: "/src/public/img/arr9.png", title: "Чёрный тмин" },
-  { img: "/src/public/img/arr10.png", title: "Чёрный тмин" },
-  { img: "/src/public/img/arr11.png", title: "Чёрный тмин" },
-  { img: "/src/public/img/arr12.png", title: "Чёрный тмин" },
-  { img: "/src/public/img/arr15.png", title: "Абрикосовые косточки" },
-  { img: "/src/public/img/arr16.png", title: "Курага" },
+  { img: "/public/img/arr1.png", title: "Жёлтый виноград" },
+  { img: "/public/img/arr2.png", title: "Грецкий орех" },
+  { img: "/public/img/arr3.png", title: "Арахис" },
+  { img: "/public/img/arr4.png", title: "Фасоль" },
+  { img: "/public/img/arr5.png", title: "Красная фасоль" },
+  { img: "/public/img/arr6.png", title: "Маш" },
+  { img: "/public/img/arr7.png", title: "Сушёная слива" },
+  { img: "/public/img/arr8.png", title: "Фасоль" },
+  { img: "/public/img/arr9.png", title: "Чёрный тмин" },
+  { img: "/public/img/arr10.png", title: "Чёрный тмин" },
+  { img: "/public/img/arr11.png", title: "Чёрный тмин" },
+  { img: "/public/img/arr12.png", title: "Чёрный тмин" },
+  { img: "/public/img/arr15.png", title: "Абрикосовые косточки" },
+  { img: "/public/img/arr16.png", title: "Курага" },
 ];
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
     <div className="w-[100%] lg:w-[93%] mx-auto mb-10">
       <header className="sticky top-0 flex flex-row items-center justify-between p-1 md:p-4 border-b border-gray-200 bg-white z-20">
         <img
-          src="./src/public/logomain.png"
+          src="./public/logomain.png"
           alt="logo"
           className="w-14 h-14 object-contain"
         />
@@ -100,7 +100,7 @@ function App() {
         <div className="w-full h-full lg:w-[55%] p-5 xl:p-[45px] rounded-3xl flex flex-col gap-2 xl:gap-5 items-center justify-center bg-[linear-gradient(120deg,#E4D7CF,#AA807C)]">
           <img
             className="object-contain h-10 w-10 md:w-15 md:h-15"
-            src="./src/public/sectionlogo.png"
+            src="./public/sectionlogo.png"
             alt=""
           />
           <h1 className="text-white text-xl md:text-4xl xl:text-5xl">
@@ -131,7 +131,7 @@ function App() {
         </div>
         <div className="w-full lg:w-[45%] h-full mt-4 md:mt-0">
           <img
-            src="./src/public/sectionsurat.jpg"
+            src="./public/sectionsurat.jpg"
             className="w-full h-full object-cover rounded-3xl"
             alt=""
           />
@@ -141,7 +141,7 @@ function App() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-1 md:p-4">
         <div className="text-center flex flex-col gap-1 lg:gap-3 items-center justify-center bg-[#E6D9D1] p-3 rounded-2xl min-h-[180px]">
           <img
-            src="./src/public/barg.png"
+            src="./public/barg.png"
             alt=""
             className="object-contain h-8 w-8 md:h-10 md:w-10"
           />
@@ -150,7 +150,7 @@ function App() {
 
         <div className="text-center flex flex-col gap-1 lg:gap-3 items-center justify-center bg-[#E6D9D1] p-3 rounded-2xl min-h-[180px]">
           <img
-            src="./src/public/check-4 1.png"
+            src="./public/check-4 1.png"
             alt=""
             className="object-contain h-8 w-8 md:h-10 md:w-10"
           />
@@ -159,7 +159,7 @@ function App() {
 
         <div className="col-span-2 md:col-span-1 text-center flex flex-col gap-1 lg:gap-3 items-center justify-center bg-[#E6D9D1] p-3 rounded-2xl min-h-[180px]">
           <img
-            src="./src/public/web 1.png"
+            src="./public/web 1.png"
             alt=""
             className="object-contain h-8 w-8 md:h-10 md:w-10"
           />
@@ -192,7 +192,7 @@ function App() {
         </div>
         <div className="hidden md:block row-span-2 col-span-2 lg:col-span-2 rounded-tr-[40px] rounded-bl-[40px] overflow-hidden">
           <img
-            src="/src/public/oooo4.jpg"
+            src="/public/oooo4.jpg"
             className="w-full h-full object-cover rounded-tr-[40px] rounded-bl-[40px]"
             alt=""
           />
@@ -202,21 +202,21 @@ function App() {
         </div>
         <div className="col-span-1 lg:col-span-1 rounded-2xl overflow-hidden">
           <img
-            src="/src/public/ooo1.png"
+            src="/public/ooo1.png"
             className="w-full h-full object-cover rounded-2xl"
             alt=""
           />
         </div>
         <div className="min-h-45 lg:min-h-max col-span-1 lg:col-span-1 rounded-2xl overflow-hidden">
           <img
-            src="/src/public/ooooo2.png"
+            src="/public/ooooo2.png"
             className="w-full h-full object-cover rounded-2xl"
             alt=""
           />
         </div>
         <div className="col-span-1 lg:col-span-1 rounded-2xl overflow-hidden">
           <img
-            src="/src/public/oooo3.png"
+            src="/public/oooo3.png"
             className="w-full h-full object-cover rounded-2xl"
             alt=""
           />
@@ -237,28 +237,28 @@ function App() {
         </div>
         <div className=" col-span-1 rounded-2xl overflow-hidden">
           <img
-            src="/src/public/ooo1.png"
+            src="/public/ooo1.png"
             className="w-full h-full object-cover rounded-2xl"
             alt=""
           />
         </div>
         <div className="min-h-40 col-span-1 rounded-2xl overflow-hidden">
           <img
-            src="/src/public/ooooo2.png"
+            src="/public/ooooo2.png"
             className="w-full h-full object-cover rounded-2xl"
             alt=""
           />
         </div>
         <div className="col-span-1 rounded-2xl overflow-hidden">
           <img
-            src="/src/public/oooo3.png"
+            src="/public/oooo3.png"
             className="w-full h-full object-cover rounded-2xl"
             alt=""
           />
         </div>
         <div className=" col-span-2 rounded-tr-[40px] rounded-bl-[40px] overflow-hidden">
           <img
-            src="/src/public/oooo4.jpg"
+            src="/public/oooo4.jpg"
             className="w-full h-full object-cover rounded-tr-[40px] rounded-bl-[40px]"
             alt=""
           />
@@ -322,12 +322,12 @@ function App() {
         <div className="grid grid-cols-2 lg:flex w-full gap-2 lg:gap-6 ">
           <div className="flex items-center bg-[#e9ddd7] justify-between rounded-xl p-5  shadow lg:w-[70%]">
             <ul className="flex flex-col gap-1">
-              <img src="/src/public/Vector.png" className="h-15 w-15 object-contain" alt="" />
+              <img src="/public/Vector.png" className="h-15 w-15 object-contain" alt="" />
               <p className="text-black text-sm md:text-2xl font-medium">
                 100% натуральный <br /> продукт без добавок
               </p>
             </ul>
-            <img src="/src/public/imggulin.png" className="hidden lg:block h-50 w-60 object-cover rounded-xl" alt="" />
+            <img src="/public/imggulin.png" className="hidden lg:block h-50 w-60 object-cover rounded-xl" alt="" />
           </div>
 
           <div className="flex items-center justify-center bg-[#e9ddd7] rounded-xl p-5 shadow lg:w-[30%]">
@@ -350,19 +350,19 @@ function App() {
                 Контроль качества на каждом этапе <br /> (HACCP, ISO, Halal)
               </p>
               <ul className="flex items-center gap-3 lg:gap-5">
-                <img src="/src/public/iso.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
-                <img src="/src/public/haccp.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
-                <img src="/src/public/halal.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
+                <img src="/public/iso.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
+                <img src="/public/haccp.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
+                <img src="/public/halal.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
               </ul>
             </div>
             <img
-              src="/src/public/imgodamlar.png"
+              src="/public/imgodamlar.png"
               alt="Контроль качества"
               className="w-[100%] h-60 object-cover rounded-xl"
             />
           </div>
 
-          <img src="/src/public/imggulin.png" className="lg:hidden h-60 sm:h-80 md:h-100 w-full object-cover rounded-xl" alt="" />
+          <img src="/public/imggulin.png" className="lg:hidden h-60 sm:h-80 md:h-100 w-full object-cover rounded-xl" alt="" />
 
         </div>
 
@@ -375,27 +375,27 @@ function App() {
           <div className="flex flex-col gap-1 bg-[#E9DDD7] items-center  rounded-lg sm:py-10 p-5">
             <span className="sm:text-lg font-medium">01</span>
             <p className="sm:text-lg font-medium">Выращивание</p>
-            <img src="/src/public/barg.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
+            <img src="/public/barg.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
           </div>
           <div className="flex flex-col gap-1 bg-[#E9DDD7] items-center  rounded-lg sm:py-10 p-5">
             <span className="sm:text-lg font-medium">02</span>
             <p className="sm:text-lg font-medium">Сбор урожая</p>
-            <img src="/src/public/sprout 1.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
+            <img src="/public/sprout 1.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
           </div>
           <div className="flex flex-col gap-1 bg-[#E9DDD7] items-center rounded-lg sm:py-10 p-5 leading-">
             <span className="sm:text-lg font-medium">03</span>
             <p className="sm:text-lg font-medium text-center">Обработка продукции</p>
-            <img src="/src/public/Group.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
+            <img src="/public/Group.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
           </div>
           <div className="flex flex-col gap-1 bg-[#E9DDD7] items-center  rounded-lg sm:py-10 p-5">
             <span className="sm:text-lg font-medium">04</span>
             <p className="sm:text-lg font-medium">Упаковка</p>
-            <img src="/src/public/box-5 1.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
+            <img src="/public/box-5 1.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
           </div>
           <div className="flex  flex-col gap-1 bg-[#E9DDD7] items-center  rounded-lg sm:py-10 p-5 col-span-2 lg:col-span-1">
             <span className="sm:text-lg font-medium">05</span>
             <p className="sm:text-lg font-medium">Доставка</p>
-            <img src="/src/public/moshin.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
+            <img src="/public/moshin.png" className="object-contain w-10 h-10 sm:h-15 sm:w-15 mt-5" alt="" />
           </div>
         </div>
       </div>
@@ -450,7 +450,7 @@ function App() {
             </div>
             <div className="relative">
               <img
-                src="/src/public/post1.jpg"
+                src="/public/post1.jpg"
                 alt="post1"
                 className="w-full h-56 object-cover"
               />
@@ -472,7 +472,7 @@ function App() {
             </div>
             <div className="relative">
               <img
-                src="/src/public/sectionsurat.jpg"
+                src="/public/sectionsurat.jpg"
                 alt="post2"
                 className="w-full h-56 object-cover"
               />
@@ -494,7 +494,7 @@ function App() {
             </div>
             <div className="relative">
               <img
-                src="/src/public/post3.jpg"
+                src="/public/post3.jpg"
                 alt="post3"
                 className="w-full h-56 object-cover"
               />
