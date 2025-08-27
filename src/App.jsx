@@ -295,29 +295,32 @@ function App() {
           </div>
           <div className=" col-span-1 rounded-2xl overflow-hidden">
             <img
-              src="/gulin.jpg"
-              className="w-full h-full object-cover rounded-2xl"
+              src="/maizimg1.jpeg"
+              className="w-full h-40 object-cover rounded-2xl"
               alt=""
             />
           </div>
           <div className="min-h-40 col-span-1 rounded-2xl overflow-hidden">
             <img
-              src="/ooooo2.png"
-              className="w-full h-full object-cover rounded-2xl"
+              src="/maizimg2.jpeg"
+              className="w-full h-40 object-cover rounded-2xl"
               alt=""
             />
           </div>
           <div className="col-span-1 rounded-2xl overflow-hidden">
             <img
-              src="/oooo3.png"
-              className="w-full h-full object-cover rounded-2xl"
+              src="/maizimg3.jpeg"
+              className="w-full h-40 object-cover rounded-2xl"
               alt=""
             />
           </div>
           <div className=" col-span-2 rounded-tr-[40px] rounded-bl-[40px] overflow-hidden">
-            <img
-              src="/oooo4.jpg"
-              className="w-full h-full object-cover rounded-tr-[40px] rounded-bl-[40px]"
+            <video
+              autoPlay
+              muted
+              loop
+              src="/ayolar.mp4"
+              className="w-full h-70 object-cover rounded-tr-[40px] rounded-bl-[40px]"
               alt=""
             />
           </div>
@@ -427,7 +430,14 @@ function App() {
               />
             </div>
 
-            <img src="/imggulin.png" className="lg:hidden h-60 sm:h-80 md:h-100 w-full object-cover rounded-xl" alt="" />
+            <video
+              src="/maizvideo.mp4"
+              className=" h-60 w-full object-cover rounded-xl"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
 
           </div>
 
