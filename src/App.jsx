@@ -412,32 +412,23 @@ function App() {
               </p>
             </div>
 
-            <div className="flex items-center bg-[#e9ddd7] rounded-xl  shadow lg:w-[70%] relative">
-              {/* <div className="hidden  absolute top-3 left-5 lg:flex justify-between items-center w-[95%] p-3 backdrop-blur-sm rounded-2xl">
-                <p className="text-md xl:text-lg  mb-3 text-white">
-                  {t.advantage4}
-                </p>
-                <ul className="flex items-center gap-3 lg:gap-5">
-                  <img src="/iso.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
-                  <img src="/haccp.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
-                  <img src="/halal.png" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" alt="" />
-                </ul>
-              </div> */}
+            <div className="grid grid-cols-3 h-40 md:h-60 overflow-hidden   rounded-xl  shadow lg:w-[70%] relative ">
               <img
-                src="/imgodamlar.png"
+                src="/maiz5.JPG"
                 alt="Контроль качества"
-                className="w-[100%] h-60 object-cover rounded-xl"
+                className="h-full object-cover"
+              />
+              <img
+                src="/maiz6.JPG"
+                alt="Контроль качества"
+                className="h-full object-cover"
+              />
+              <img
+                src="/miaz7.JPG"
+                alt="Контроль качества"
+                className="h-full object-cover"
               />
             </div>
-
-            <video
-              src="/maizvideo.mp4"
-              className=" h-60 w-full object-cover rounded-xl"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
 
           </div>
 
@@ -531,7 +522,7 @@ function App() {
               </div>
               <div className="relative mt-10">
                 <img
-                  src="/oooo4.jpg"
+                  src="/imgrais1.png"
                   alt="post1"
                   className="w-full h-56 object-cover rounded-xl"
                 />
@@ -553,7 +544,7 @@ function App() {
               </div>
               <div className="relative">
                 <img
-                  src="/sectionsurat.jpg"
+                  src="/imgrais2.jpeg"
                   alt="post2"
                   className="w-full h-56 object-cover rounded-xl"
                 />
@@ -590,7 +581,7 @@ function App() {
 
           </div>
 
-          <img src="/bobo.jpg" className="w-full h-80 md:h-90 lg:h-120 xl:h-150 object-cover mt-6 rounded-2xl" alt="" />
+          <img src="/zavod.jpg" className="w-full h-80 md:h-90 lg:h-120 object-cover mt-6 rounded-2xl" alt="" />
         </section>
 
 
