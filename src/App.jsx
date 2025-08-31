@@ -342,7 +342,7 @@ function App() {
                 <img
                   src={item.img}
                   alt={t.productTitles[index]}
-                  className="w-full h-20 lg:h-32 object-contain mb-4 group-hover:scale-110 duration-300 ease-in-out"
+                  className="w-full h-20 lg:h-32 object-contain mb-4 scale-115  group-hover:scale-120 duration-300 ease-in-out"
                 />
                 <div className="flex flex-col p-1 sm:p-3">
                   <h2 className="text-[12px] sm:text-sm md:text-lg font-semibold text-[#A77B78] mt-3">
@@ -521,10 +521,13 @@ function App() {
                 </h3>
               </div>
               <div className="relative mt-10">
-                <img
-                  src="/imgrais1.png"
-                  alt="post1"
-                  className="w-full h-56 object-cover rounded-xl"
+                <video
+                  src="/maizvideo3.MOV"
+                  className="hidden lg:block h-56 w-full object-cover rounded-xl"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
                 <a
                   href="#"
@@ -544,8 +547,8 @@ function App() {
               </div>
               <div className="relative">
                 <img
-                  src="/imgrais2.jpeg"
-                  alt="post2"
+                  src="/imgrais1.png"
+                  alt="post1"
                   className="w-full h-56 object-cover rounded-xl"
                 />
                 <a
@@ -565,10 +568,13 @@ function App() {
                 </h3>
               </div>
               <div className="relative">
-                <img
-                  src="/ooo5.jpg"
-                  alt="post3"
-                  className="w-full h-56 object-cover rounded-xl"
+                <video
+                  src="/maizvideo2.MOV"
+                  className="hidden lg:block h-56 w-full object-cover rounded-xl"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
                 <a
                   href="#"
