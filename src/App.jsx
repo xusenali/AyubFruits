@@ -9,26 +9,22 @@ import { BsArrowUpRight, BsBoxFill } from "react-icons/bs";
 
 
 const images = [
-  { img: "/img/arr1.jpg", title: "Жёлтый виноград" },
-  { img: "/img/arr2.jfif", title: "Грецкий орех" },
-  { img: "/img/arr3.jfif", title: "Арахис" },
-  { img: "/img/arr4.jfif", title: "Фасоль" },
-  { img: "/img/arr5.jfif", title: "Красная фасоль" },
-  // { img: "/img/arr6.png", title: "Маш" },
-  // { img: "/img/arr7.png", title: "Сушёная слива" },
-  // { img: "/img/arr8.png", title: "Фасоль" },
-  // { img: "/img/arr9.png", title: "Чёрный тмин" },
-  { img: "/img/arr10.png", title: "Чёрный тмин" },
+  { img: "/img/arr1.png", title: "Изюм жёлтый" },
+  { img: "/img/arr2.png", title: "Изюм микс" },
+  { img: "/img/arr3.png", title: "Изюм чёрный" },
+  { img: "/img/arr4.png", title: "Косточки абрикоса" },
+  { img: "/img/arr5.png", title: "Изюм золотистый" },
+  { img: "/img/arr10.png", title: "Изюм чёрный крупный" },
   { img: "/img/arr11.png", title: "Чёрный тмин" },
   { img: "/img/arr12.png", title: "Чёрный тмин" },
-  { img: "/img/arr15.png", title: "Абрикосовые косточки" },
-  { img: "/img/arr16.png", title: "Сушёный абрикос" },
-  { img: "/img/arr17.jpg", title: "Красный сушёный абрикос" },
-  { img: "/img/arr18.jpg", title: "Жёлтый сушёный абрикос" },
-  { img: "/img/arr19.jpg", title: "Курага" },
-  { img: "/img/arr20.jpg", title: "Курага" },
-  { img: "/img/arr21.jpg", title: "Курага" },
-  { img: "/img/arr22.webp", title: "Курага" },
+  { img: "/img/arr15.png", title: "Курага крупная" },
+  { img: "/img/arr16.png", title: "Курага жёлтая" },
+  { img: "/img/arr17.png", title: "Курага тёмная" },
+  { img: "/img/arr18.png", title: "Курага светлая" },
+  { img: "/img/arr19.png", title: "Урюк" },
+  { img: "/img/arr20.png", title: "Урюк сушёный" },
+  { img: "/img/arr21.png", title: "Курага чёрная" },
+  { img: "/img/arr22.png", title: "Курага чёрная" },
 ];
 
 function App() {
@@ -413,7 +409,7 @@ function App() {
                     <img
                       src={item.img}
                       alt={t.productTitles[index]}
-                      className="w-full h-20 lg:h-32 object-contain mb-4 scale-115  group-hover:scale-120 duration-300 ease-in-out"
+                      className="w-full h-50 object-contain mb-4"
                     />
                     <div className="flex flex-col p-1 sm:p-3">
                       <h2 className="text-[12px] sm:text-sm md:text-lg font-semibold text-[#A77B78] mt-3">
@@ -670,13 +666,11 @@ function App() {
                     className="relative cursor-pointer"
                     onClick={() => setPlay2(true)}
                   >
-                    {/* Videoning birinchi kadri preview sifatida */}
-                    <video
-                      src="/kattavideo.MOV"
+                    {/* Rasm preview sifatida */}
+                    <img
+                      src="/kattaimg.png" // bu yerda videoga mos rasmni qo'y
+                      alt="Video preview"
                       className="w-full h-80 md:h-90 lg:h-120 object-cover rounded-2xl"
-                      muted
-                      preload="metadata"
-                      playsInline
                     />
 
                     {/* Play tugmasi */}
@@ -698,6 +692,7 @@ function App() {
                   </video>
                 )}
               </div>
+
 
 
             </section>
