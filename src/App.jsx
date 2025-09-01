@@ -9,11 +9,11 @@ import { BsArrowUpRight, BsBoxFill } from "react-icons/bs";
 
 
 const images = [
-  // { img: "/img/arr1.png", title: "Жёлтый виноград" },
-  // { img: "/img/arr2.png", title: "Грецкий орех" },
-  // { img: "/img/arr3.png", title: "Арахис" },
-  // { img: "/img/arr4.png", title: "Фасоль" },
-  // { img: "/img/arr5.png", title: "Красная фасоль" },
+  { img: "/img/arr1.jpg", title: "Жёлтый виноград" },
+  { img: "/img/arr2.jfif", title: "Грецкий орех" },
+  { img: "/img/arr3.jfif", title: "Арахис" },
+  { img: "/img/arr4.jfif", title: "Фасоль" },
+  { img: "/img/arr5.jfif", title: "Красная фасоль" },
   // { img: "/img/arr6.png", title: "Маш" },
   // { img: "/img/arr7.png", title: "Сушёная слива" },
   // { img: "/img/arr8.png", title: "Фасоль" },
@@ -483,21 +483,21 @@ function App() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-3 h-max md:h-60 overflow-hidden   rounded-xl  shadow lg:w-[70%] relative ">
+                <div className="grid grid-cols-3 h-30 sm:h-40 md:h-60 overflow-hidden   rounded-xl   lg:w-[70%] relative ">
                   <img
                     src="/maiz5.JPG"
                     alt="Контроль качества"
-                    className="h-full object-contain sm:object-cover"
+                    className=" object-contain sm:object-cover"
                   />
                   <img
                     src="/maiz6.JPG"
                     alt="Контроль качества"
-                    className="h-full object-contain sm:object-cover"
+                    className=" object-contain sm:object-cover"
                   />
                   <img
                     src="/miaz7.JPG"
                     alt="Контроль качества"
-                    className="h-full object-contain sm:object-cover"
+                    className=" object-contain sm:object-cover"
                   />
                 </div>
 
