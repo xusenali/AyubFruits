@@ -85,7 +85,7 @@ function App() {
         </div>
       )}
 
-      <div className="w-[100%] lg:w-[93%] mx-auto mb-10 ">
+      <div className="w-[100%] lg:w-[93%] mx-auto mb-10 overflow-hidden">
         <header className=" sticky top-0 flex flex-row items-center justify-between p-1 md:p-4 border-b border-gray-200 bg-white z-20">
           <img
             src="/logomain.png"
