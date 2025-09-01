@@ -38,6 +38,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [play, setPlay] = useState(false);
   const [play2, setPlay2] = useState(false);
+  const [play3, setPlay3] = useState(false);
+  const [play4, setPlay4] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -329,47 +331,69 @@ function App() {
             </div>
 
             <div className=" grid lg:hidden grid-cols-2 gap-3 mt-3 p-1 md:p-4">
-              <div className="min-h-40 border border-gray-300 col-span-1 rounded-2xl p-2 md:p-5 lg:p-8">
+              <div className="min-h-40 border border-gray-300 col-span-1 rounded-sm md:rounded-2xl p-2 md:p-5 lg:p-8">
                 <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium">01</h1>
                 <p className=" text-[12px] sm:text-xl mt-1 lg:mt-3">{t.grid1}</p>
               </div>
-              <div className="min-h-40 border border-gray-300 col-span-1 rounded-2xl p-2 md:p-5 lg:p-8">
+              <div className="min-h-40 border border-gray-300 col-span-1 rounded-sm md:rounded-2xl p-2 md:p-5 lg:p-8">
                 <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium">02</h1>
                 <p className="text-[12px] sm:text-xl mt-1 lg:mt-3">{t.grid2}</p>
               </div>
-              <div className="min-h-40 flex items-center justify-center  md:text-center rounded-2xl p-3 sm:p-5 lg:p-8 bg-[#E6D9D1] col-span-1">
+              <div className="min-h-40 flex items-center justify-center  md:text-center rounded-sm md:rounded-2xl p-3 sm:p-5 lg:p-8 bg-[#E6D9D1] col-span-1">
                 <p className="text-sm sm:text-3xl">{t.grid3}</p>
               </div>
-              <div className=" col-span-1 rounded-2xl overflow-hidden">
+              <div className=" col-span-1 rounded-sm md:rounded-2xl overflow-hidden">
                 <img
                   src="/maizimg1.jpeg"
-                  className="w-full h-40 object-cover rounded-2xl"
+                  className="w-full h-40 object-cover rounded-sm md:rounded-2xl"
                   alt=""
                 />
               </div>
-              <div className="min-h-40 col-span-1 rounded-2xl overflow-hidden">
+              <div className="min-h-40 col-span-1 rounded-sm md:rounded-2xl overflow-hidden">
                 <img
                   src="/maizimg2.jpeg"
-                  className="w-full h-40 object-cover rounded-2xl"
+                  className="w-full h-40 object-cover rounded-sm md:rounded-2xl"
                   alt=""
                 />
               </div>
-              <div className="col-span-1 rounded-2xl overflow-hidden">
+              <div className="col-span-1 rounded-sm md:rounded-2xl overflow-hidden">
                 <img
                   src="/maizimg3.jpeg"
-                  className="w-full h-40 object-cover rounded-2xl"
+                  className="w-full h-40 object-cover rounded-sm md:rounded-2xl"
                   alt=""
                 />
               </div>
-              <div className=" col-span-2 rounded-tr-[40px] rounded-bl-[40px] overflow-hidden">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  src="/ayolar.mp4"
-                  className="w-full h-70 object-cover rounded-tr-[40px] rounded-bl-[40px]"
-                  alt=""
-                />
+              <div className="h-80 row-span-2 col-span-2 relative lg:col-span-2 rounded-tr-[40px] rounded-bl-[40px]">
+                {/* Dekoratsiya aylanadigan rasm */}
+                {!play ? (
+                  // Poster + Play tugmasi
+                  <div
+                    className="relative w-full h-full cursor-pointer"
+                    onClick={() => setPlay(true)}
+                  >
+                    <img
+                      src="/ayolarprev.png"
+                      alt="preview"
+                      className="w-full h-full object-cover rounded-tr-[40px] rounded-bl-[40px]"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <button className="bg-white/80 text-black rounded-full flex items-center justify-center  w-15 h-15 text-2xl shadow-lg hover:scale-110 transition">
+                        <span>▶</span>
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  // Play bosilganda video yuklanadi
+                  <video
+                    autoPlay
+                    muted={false}
+                    controls
+                    className="w-full h-full object-cover rounded-tr-[40px] rounded-bl-[40px]"
+                  >
+                    <source src="/ayolar.mp4" type="video/mp4" />
+                    Sizning brauzeringiz video formatini qo‘llamaydi.
+                  </video>
+                )}
               </div>
             </div>
 
@@ -380,11 +404,11 @@ function App() {
                 </span>
                 <h1 id="products" className="text-3xl lg:text-5xl mt-3 lg:mt-6 scroll-mt-40">{t.catalogSubtitle}</h1>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 mt-3 lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-6 p-2 lg:p-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 mt-3 lg:grid-cols-4 gap-1 sm:gap-4 lg:gap-6 p-2 lg:p-6">
                 {images.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-[#f8f5f3] duration-200 ease-in-out border border-[#baa7a6] rounded-2xl  transition py-2 lg:p-4 flex flex-col group"
+                    className="bg-[#f8f5f3] duration-200 ease-in-out border border-[#baa7a6] rounded md:rounded-2xl  transition py-2 lg:p-4 flex flex-col group"
                   >
                     <img
                       src={item.img}
@@ -463,17 +487,17 @@ function App() {
                   <img
                     src="/maiz5.JPG"
                     alt="Контроль качества"
-                    className="h-full object-cover"
+                    className="h-full sm:object-cover"
                   />
                   <img
                     src="/maiz6.JPG"
                     alt="Контроль качества"
-                    className="h-full object-cover"
+                    className="h-full sm:object-cover"
                   />
                   <img
                     src="/miaz7.JPG"
                     alt="Контроль качества"
-                    className="h-full object-cover"
+                    className="h-full  sm:object-cover"
                   />
                 </div>
 
@@ -484,7 +508,7 @@ function App() {
             <div id="benefits" className="w-full my-10 p-1 md:p-4 scroll-mt-20">
               <h1 className="text-2xl sm:text-3xl lg:text-5xl text-center">{t.processTitle} </h1>
               <p className="text-md sm:text-xl lg:text-3xl text-center mt-2 text-[#A77B78]">{t.processSubtitle}</p>
-              <div className="grid gap-3 md:gap-5 xl:gap-10 grid-cols-2 lg:grid-cols-5 mt-10">
+              <div className="grid gap-1 md:gap-5 xl:gap-10 grid-cols-2 lg:grid-cols-5 mt-10">
                 <div className="flex flex-col gap-1 bg-[#E9DDD7] items-center  rounded-lg sm:py-10 p-5">
                   <span className="sm:text-lg font-medium">01</span>
                   <p className="sm:text-lg font-medium">{t.step1} </p>
@@ -567,22 +591,46 @@ function App() {
                       {t.article1}
                     </h3>
                   </div>
-                  <div className="relative mt-10">
-                    <video
-                      src="/maizvideo3.MOV"
-                      className="hidden lg:block h-56 w-full object-cover rounded-xl"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                    />
+                  <div className="relative">
+                    {!play3 ? (
+                      <div
+                        className="relative cursor-pointer"
+                        onClick={() => setPlay3(true)}
+                      >
+                        {/* Videoning birinchi kadri preview sifatida */}
+                        <video
+                          src="/maizvideo3.MOV"
+                          className="w-full h-56 object-cover rounded-xl"
+                          preload="metadata"
+                          muted
+                          playsInline
+                        />
+                        {/* Play tugmasi */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <button className="bg-white/80 text-black rounded-full p-4 text-xl shadow-lg hover:scale-110 transition">
+                            ▶
+                          </button>
+                        </div>
+                      </div>
+                    ) : (
+                      <video
+                        src="/maizvideo3.MOV"
+                        className="w-full h-56 object-cover rounded-xl"
+                        autoPlay
+                        controls
+                        playsInline
+                      />
+                    )}
+
+                    {/* Yuqoridagi tugma */}
                     <a
                       href="#"
-                      className="absolute  border-white border-4 -top-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-lg hover:bg-green-800 transition"
+                      className="absolute border-white border-4 -top-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-lg hover:bg-green-800 transition"
                     >
                       <BsArrowUpRight className="w-5 h-5" />
                     </a>
                   </div>
+
                 </div>
 
                 {/* Card 2 */}
@@ -615,14 +663,37 @@ function App() {
                     </h3>
                   </div>
                   <div className="relative">
-                    <video
-                      src="/maizvideo2.MOV"
-                      className="hidden lg:block h-56 w-full object-cover rounded-xl"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                    />
+                    {!play4 ? (
+                      <div
+                        className="relative cursor-pointer"
+                        onClick={() => setPlay4(true)}
+                      >
+                        {/* Videoning birinchi kadri preview sifatida */}
+                        <video
+                          src="/maiz10.MOV"
+                          className=" w-full h-56 object-cover rounded-xl"
+                          preload="metadata"
+                          muted
+                          playsInline
+                        />
+                        {/* Play tugmasi */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <button className="bg-white/80 text-black rounded-full p-4 text-xl shadow-lg hover:scale-110 transition">
+                            ▶
+                          </button>
+                        </div>
+                      </div>
+                    ) : (
+                      <video
+                        src="/maiz10.MOV"
+                        className=" w-full h-56 object-cover rounded-xl"
+                        autoPlay
+                        controls
+                        playsInline
+                      />
+                    )}
+
+                    {/* Tepadagi tugma o‘z joyida qoladi */}
                     <a
                       href="#"
                       className="absolute border-white border-4 -top-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-lg hover:bg-green-800 transition"
@@ -630,6 +701,8 @@ function App() {
                       <BsArrowUpRight className="w-5 h-5" />
                     </a>
                   </div>
+
+
                 </div>
 
               </div>
@@ -640,11 +713,16 @@ function App() {
                     className="relative cursor-pointer"
                     onClick={() => setPlay2(true)}
                   >
-                    <img
-                      src="/zavod.jpg"
-                      alt="zavod"
+                    {/* Videoning birinchi kadri preview sifatida */}
+                    <video
+                      src="/kattavideo.MOV"
                       className="w-full h-80 md:h-90 lg:h-120 object-cover rounded-2xl"
+                      muted
+                      preload="metadata"
+                      playsInline
                     />
+
+                    {/* Play tugmasi */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <button className="bg-white/80 text-black rounded-full flex items-center justify-center w-15 h-15 text-2xl shadow-lg hover:scale-110 transition">
                         ▶
@@ -653,15 +731,18 @@ function App() {
                   </div>
                 ) : (
                   <video
+                    src="/kattavideo.MOV"
                     autoPlay
                     controls
+                    playsInline
                     className="w-full h-80 md:h-90 lg:h-120 xl:h-150 object-cover rounded-2xl"
                   >
-                    <source src="/kattavideo.MOV" type="video/mp4" />
                     Sizning brauzeringiz video formatini qo‘llamaydi.
                   </video>
                 )}
               </div>
+
+
             </section>
 
 
