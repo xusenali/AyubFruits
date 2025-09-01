@@ -592,37 +592,15 @@ function App() {
                     </h3>
                   </div>
                   <div className="relative">
-                    {!play3 ? (
-                      <div
-                        className="relative cursor-pointer"
-                        onClick={() => setPlay3(true)}
-                      >
-                        {/* Videoning birinchi kadri preview sifatida */}
-                        <video
-                          src="/maizvideo3.MOV"
-                          className="w-full h-56 object-cover rounded-xl"
-                          preload="metadata"
-                          muted
-                          playsInline
-                        />
-                        {/* Play tugmasi */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <button className="bg-white/80 text-black rounded-full p-4 text-xl shadow-lg hover:scale-110 transition">
-                            ▶
-                          </button>
-                        </div>
-                      </div>
-                    ) : (
-                      <video
-                        src="/maizvideo3.MOV"
-                        className="w-full h-56 object-cover rounded-xl"
-                        autoPlay
-                        controls
-                        playsInline
-                      />
-                    )}
+                    <video
+                      src="/maizvideo3.MOV"
+                      className="w-full h-56 object-cover rounded-xl"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    />
 
-                    {/* Yuqoridagi tugma */}
                     <a
                       href="#"
                       className="absolute border-white border-4 -top-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-lg hover:bg-green-800 transition"
@@ -630,7 +608,6 @@ function App() {
                       <BsArrowUpRight className="w-5 h-5" />
                     </a>
                   </div>
-
                 </div>
 
                 {/* Card 2 */}
@@ -663,37 +640,16 @@ function App() {
                     </h3>
                   </div>
                   <div className="relative">
-                    {!play4 ? (
-                      <div
-                        className="relative cursor-pointer"
-                        onClick={() => setPlay4(true)}
-                      >
-                        {/* Videoning birinchi kadri preview sifatida */}
-                        <video
-                          src="/maiz10.MOV"
-                          className=" w-full h-56 object-cover rounded-xl"
-                          preload="metadata"
-                          muted
-                          playsInline
-                        />
-                        {/* Play tugmasi */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <button className="bg-white/80 text-black rounded-full p-4 text-xl shadow-lg hover:scale-110 transition">
-                            ▶
-                          </button>
-                        </div>
-                      </div>
-                    ) : (
-                      <video
-                        src="/maiz10.MOV"
-                        className=" w-full h-56 object-cover rounded-xl"
-                        autoPlay
-                        controls
-                        playsInline
-                      />
-                    )}
+                    <video
+                      src="/maiz10.MOV"
+                      className="w-full h-56 object-cover rounded-xl"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    />
 
-                    {/* Tepadagi tugma o‘z joyida qoladi */}
+                    {/* Tepadagi tugma joyida qoladi */}
                     <a
                       href="#"
                       className="absolute border-white border-4 -top-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-lg hover:bg-green-800 transition"
@@ -701,6 +657,7 @@ function App() {
                       <BsArrowUpRight className="w-5 h-5" />
                     </a>
                   </div>
+
 
 
                 </div>
