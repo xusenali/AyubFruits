@@ -108,7 +108,7 @@ function App() {
           )}
 
           <div className="w-[100%] lg:w-[93%] mx-auto mb-10 overflow-hidden">
-            <header className=" sticky top-0 flex flex-row items-center justify-between p-1 md:p-4 border-b border-gray-200 bg-white z-20">
+            <header className="fixed top-0 flex w-full flex-row items-center justify-between p-1 md:p-4 border-b border-gray-200 bg-white z-20">
               <img
                 src="/logomain.png"
                 alt="logo"
@@ -172,7 +172,7 @@ function App() {
               </div>
             </header>
 
-            <section className="mg:h-[50vh] lg:h-[65vh] xl:h-[88vh] flex flex-col lg:flex-row items-center gap-3 p-1 md:p-4 mt-8">
+            <section className="  mg:h-[50vh] lg:h-[65vh] xl:h-[88vh] flex flex-col lg:flex-row items-center gap-3 p-1 md:p-4 mt-25">
               <div className=" w-full h-full lg:w-[55%] p-5 xl:p-[45px] rounded-3xl flex flex-col gap-2 xl:gap-5 items-center justify-center bg-[linear-gradient(120deg,#E4D7CF,#AA807C)]">
                 <img
                   className="object-contain h-10 w-10 md:w-15 md:h-15"
