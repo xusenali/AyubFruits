@@ -34,8 +34,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [play, setPlay] = useState(false);
   const [play2, setPlay2] = useState(false);
-  const [play3, setPlay3] = useState(false);
-  const [play4, setPlay4] = useState(false);
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -326,7 +325,7 @@ function App() {
               </div>
             </div>
 
-            <div className=" grid lg:hidden grid-cols-2 gap-3 mt-3 p-1 md:p-4">
+            <div className="grid lg:hidden grid-cols-2 gap-1 mt-3 p-1 md:p-4">
               <div className="min-h-40 border border-gray-300 col-span-1 rounded-sm md:rounded-2xl p-2 md:p-5 lg:p-8">
                 <h1 className="text-2xl md:text-3xl lg:text-5xl font-medium">01</h1>
                 <p className=" text-[12px] sm:text-xl mt-1 lg:mt-3">{t.grid1}</p>
@@ -393,7 +392,7 @@ function App() {
               </div>
             </div>
 
-            <div className="w-full my-10">
+            <div className="w-full my-5 md:my-10">
               <div className="w-full text-center">
                 <span className=" px-7 p-1 border rounded-full text-[12px]">
                   {t.catalogTitle}
