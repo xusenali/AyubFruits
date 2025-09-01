@@ -483,21 +483,21 @@ function App() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-3 h-40 md:h-60 overflow-hidden   rounded-xl  shadow lg:w-[70%] relative ">
+                <div className="grid grid-cols-3 h-max md:h-60 overflow-hidden   rounded-xl  shadow lg:w-[70%] relative ">
                   <img
                     src="/maiz5.JPG"
                     alt="Контроль качества"
-                    className="h-full sm:object-cover"
+                    className="h-full object-contain sm:object-cover"
                   />
                   <img
                     src="/maiz6.JPG"
                     alt="Контроль качества"
-                    className="h-full sm:object-cover"
+                    className="h-full object-contain sm:object-cover"
                   />
                   <img
                     src="/miaz7.JPG"
                     alt="Контроль качества"
-                    className="h-full  sm:object-cover"
+                    className="h-full object-contain sm:object-cover"
                   />
                 </div>
 
