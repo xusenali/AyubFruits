@@ -34,7 +34,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [play, setPlay] = useState(false);
   const [play2, setPlay2] = useState(false);
-  const [stop, setStop] = useState(true)
+  // const [stop, setStop] = useState(true)
+  const [stop, setStop] = useState(false)
 
   useEffect(() => {
     const timer = setTimeout(() => {
