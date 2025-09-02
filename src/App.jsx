@@ -34,7 +34,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [play, setPlay] = useState(false);
   const [play2, setPlay2] = useState(false);
-
+  const [stop, setStop] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -45,9 +45,21 @@ function App() {
   }, []);
 
   const t = translations[lang];
+  useEffect(() => {
+    if (stop) {
+      document.body.style.overflow = "hidden"; // scroll bloklanadi
+    } else {
+      document.body.style.overflow = "auto"; // scroll qayta yoqiladi
+    }
+  }, [stop]);
 
   return (
     <>
+      {stop && (
+        <div className="absolute inset-0 bg-red-500 w-full h-full z-50">
+        </div>
+      )}
+
       {loading ?
         <div className=" w-full h-[100vh] gap-5 flex flex-col items-center justify-center scale-up">
           <h1 className="text-5xl lg:text-9xl  font-bold text-[#A77B78]">Ayyub Company</h1>
@@ -103,7 +115,7 @@ function App() {
           )}
 
           <div className="w-[100%] lg:w-[93%] mx-auto mb-10 overflow-hidden">
-            <header className="fixed top-0 flex w-full flex-row items-center justify-between p-1 md:p-4 border-b border-gray-200 bg-white z-20">
+            <header className="fixed top-0 flex w-[100%] lg:w-[93%] mx-auto flex-row items-center justify-between p-1 md:p-4 border-b border-gray-200 bg-white z-20">
               <img
                 src="/logomain.png"
                 alt="logo"
@@ -707,11 +719,11 @@ function App() {
               </ul>
               <ul className="text-white">
                 <li>{t.emailLabel} </li>
-                <li className="text-2xl">toshev_1989@bk.ru</li>
+                <li className="text-2xl">ayyub.company2019@mail.ru</li>
               </ul>
               <ul className="text-white">
-                <li>{t.addressLabeln} </li>
-                <li className="text-2xl">г. Самарканд, р-н Жомбой, улица Холвой</li>
+                <li>Adress:</li>
+                <li className="text-2xl"> Mayin adresa joyi, Toshev_1989@bk.ru va moneton</li>
               </ul>
             </div>
           </footer>
