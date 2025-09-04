@@ -724,7 +724,7 @@ function App() {
               </ul>
               <ul className="text-white">
                 <li>Adress:</li>
-                <li className="text-2xl">Toshev_1989@bk.ru , г. Самарканд, р-н Жомбой, улица Холвой</li>
+                <li className="text-2xl">г. Самарканд, р-н Жомбой, улица Холвой</li>
               </ul>
             </div>
           </footer>
