@@ -188,7 +188,7 @@ export const translations = {
       "Sariq mayiz",
       "Aralash mayiz",
       "Qora mayiz",
-      "O‘rik danagi",
+      "Qora mayiz",
       "Oltin mayiz",
       "Yirik qora mayiz",
       "Qora sedana",
