@@ -421,7 +421,7 @@ function App() {
                     <img
                       src={item.img}
                       alt={t.productTitles[index]}
-                      className="w-full h-50 object-contain mb-4"
+                      className="w-[40%] h-40 object-contain mb-4 mx-auto"
                     />
                     <div className="flex flex-col p-1 sm:p-3">
                       <h2 className="text-[12px] sm:text-sm md:text-lg font-semibold text-[#A77B78] mt-3">
